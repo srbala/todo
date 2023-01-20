@@ -1,0 +1,50 @@
+
+docker manifest rm "quay.io/almalinux/almalinux:latest" 
+docker manifest create "quay.io/almalinux/almalinux:latest" \
+                --amend "quay.io/almalinuxorg/s390x:8.7-20221201" \
+                --amend "quay.io/almalinuxorg/ppc64le:8.7-20221201" \
+                --amend "quay.io/almalinuxorg/amd64:8.7-20221201" \
+                --amend "quay.io/almalinuxorg/arm64v8:8.7-20221201"
+docker manifest push "quay.io/almalinux/almalinux:latest"
+docker manifest rm "quay.io/almalinux/almalinux:8" 
+docker manifest create "quay.io/almalinux/almalinux:8" \
+                --amend "quay.io/almalinuxorg/s390x:8.7-20221201" \
+                --amend "quay.io/almalinuxorg/ppc64le:8.7-20221201" \
+                --amend "quay.io/almalinuxorg/amd64:8.7-20221201" \
+                --amend "quay.io/almalinuxorg/arm64v8:8.7-20221201"
+docker manifest push "quay.io/almalinux/almalinux:8"
+docker manifest rm "quay.io/almalinux/almalinux:8.7" 
+docker manifest create "quay.io/almalinux/almalinux:8.7" \
+                --amend "quay.io/almalinuxorg/s390x:8.7-20221201" \
+                --amend "quay.io/almalinuxorg/ppc64le:8.7-20221201" \
+                --amend "quay.io/almalinuxorg/amd64:8.7-20221201" \
+                --amend "quay.io/almalinuxorg/arm64v8:8.7-20221201"
+docker manifest push "quay.io/almalinux/almalinux:8.7"
+docker manifest create "quay.io/almalinux/almalinux:8.7-20221201" \
+                --amend "quay.io/almalinuxorg/s390x:8.7-20221201" \
+                --amend "quay.io/almalinuxorg/ppc64le:8.7-20221201" \
+                --amend "quay.io/almalinuxorg/amd64:8.7-20221201" \
+                --amend "quay.io/almalinuxorg/arm64v8:8.7-20221201"
+docker manifest push "quay.io/almalinux/almalinux:8.7-20221201"
+
+
+docker manifest rm "quay.io/almalinux/almalinux:9" 
+docker manifest create "quay.io/almalinux/almalinux:9" \
+                --amend "quay.io/almalinuxorg/s390x:9.1-20221201" \
+                --amend "quay.io/almalinuxorg/ppc64le:9.1-20221201" \
+                --amend "quay.io/almalinuxorg/amd64:9.1-20221201" \
+                --amend "quay.io/almalinuxorg/arm64v8:9.1-20221201"
+docker manifest push "quay.io/almalinux/almalinux:9"
+docker manifest rm "quay.io/almalinux/almalinux:9.1" 
+docker manifest create "quay.io/almalinux/almalinux:9.1" \
+                --amend "quay.io/almalinuxorg/s390x:9.1-20221201" \
+                --amend "quay.io/almalinuxorg/ppc64le:9.1-20221201" \
+                --amend "quay.io/almalinuxorg/amd64:9.1-20221201" \
+                --amend "quay.io/almalinuxorg/arm64v8:9.1-20221201"
+docker manifest push "quay.io/almalinux/almalinux:9.1"
+docker manifest create "quay.io/almalinux/almalinux:9.1-20221201" \
+                --amend "quay.io/almalinuxorg/s390x:9.1-20221201" \
+                --amend "quay.io/almalinuxorg/ppc64le:9.1-20221201" \
+                --amend "quay.io/almalinuxorg/amd64:9.1-20221201" \
+                --amend "quay.io/almalinuxorg/arm64v8:9.1-20221201"
+docker manifest push "quay.io/almalinux/almalinux:9.1-20221201"
